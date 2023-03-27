@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="saveToLocalStorage(event)">
+        <label><b>SellingPrice</b></label>
+        <input type="number" id="SellingPrice" name="SellingPrice">
+        <label><b>ProductName</b></label>
+        <input type="text" id="ProductName" name="ProductName">
+        <label for="category"><b>Choose a Category:</b></label>
+        <select id="category" name="category">
+            <option id="p">Electronic</option>
+            <option id="q">Food</option>
+            <option id="r">SkinCare</option>
+        </select>
+        <button id="button">Add Products</button>
+    </form>
+    <div>
+        <h2>Products</h2>
+        <ol id="Electronic"><b>Electronic</b></ol>
+        <ol id="Food"><b>Food</b></ol>
+        <ol id="SkinCare"><b>SkinCare</b></ol>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
